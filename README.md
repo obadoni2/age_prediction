@@ -1,7 +1,7 @@
 # Age and Gender Prediction App
 
 This Flask application uses OpenCV and pre-trained deep learning models to predict age and gender from webcam feeds or image uploads.
-Emotion is coming
+
 
 ## Features
 - **Real-time Age Prediction**: Estimates the age range of detected faces.

@@ -1,0 +1,145 @@
+/* General body styling */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Background image styling */
+.bgimg {
+    background-image: url('your-image-url.jpg');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+/* Styling for the middle text in the background image */
+.display-middle {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+/* Style for center text, padding, and wide content */
+.center {
+    text-align: center;
+}
+
+.padding-large {
+    padding: 20px;
+}
+
+.xlarge {
+    font-size: 40px;
+}
+
+.wide {
+    letter-spacing: 2px;
+}
+
+.black {
+    color: #000;
+}
+
+.animate-opacity {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Hide small elements on small screens */
+.hide-small {
+    display: inline;
+}
+
+@media only screen and (max-width: 600px) {
+    .hide-small {
+        display: none;
+    }
+
+    .xlarge {
+        font-size: 24px;
+    }
+}
+
+/* Tabs styling */
+.tab {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    border-radius: 5px 5px 0 0;
+    margin-right: 10px;
+}
+
+.tab:hover {
+    background-color: #555;
+}
+
+/* Tab content styling */
+.action-form {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Radio button hiding for tabs */
+input[type="radio"] {
+    display: none;
+}
+
+input:checked + label {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Live and Photo tab content styling */
+.live-htm, .photo-htm {
+    display: none;
+}
+
+#tab-1:checked ~ .action-form .live-htm {
+    display: block;
+}
+
+#tab-2:checked ~ .action-form .photo-htm {
+    display: block;
+}
+
+/* General group styling for inputs */
+.group {
+    margin: 20px 0;
+}
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 600px) {
+    .display-middle {
+        font-size: 1.8em;
+    }
+
+    .tab {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    .action-form {
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
